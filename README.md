@@ -9,14 +9,14 @@
   - nincs paraméter átadva,
   - paraméternek egy fájl lett átadva,
 - a program a rekurzív bejárással hozzon létre minden könyvtárhoz egy index.html és minden képhez egy <image_name>.html oldalt,
-- az index.html oldal kinézete és működése:
+- az index.html oldal kinézete és működése: <br />
   ![index.html sample](sampleindex.png)
   - a "Start Page" vigyen vissza a gyökérkönyvtár index.html oldalára,
   - a "<<" vigyen az előző könyvtár index.html oldalára,
   - legyenek listázva a könyvtárak és a képek,
   - egy könyvtárra kattintva vigyen az index.html oldalára,
   - egy képre kattintva vigyen a kép html oldalára,
-- a képekhez tartozó html oldal kinézete és működése:
+- a képekhez tartozó html oldal kinézete és működése: <br />
   ![sample html for images](sapmleimage.png)
   - a "^^" vigyen vissza a kép könyvtárának index.html oldalára,
   - a "<<" vigyen az előző, míg a ">>" a következő kép html oldalára,
@@ -25,7 +25,7 @@
 - ha megváltoztatjuk a gyökérkönyvtár elérési útját vagy a nevét, akkor is működjön a html oldal.
 
 ## Segédfájlok leírása
-  A program indítását, a html oldalak törlését és a gyökérkönyvtár index.html böngészőben megnyitását két Makefile segíti.
+  A program indítását, a html oldalak törlését és a gyökérkönyvtár index.html böngészőben megnyitását két Makefile segíti.  <br />
 
   **Program indítását segítő Makefile és működése:**
   ```
@@ -36,9 +36,11 @@
       javac Start.java
       java Start <root_directory_path>
   ```
-  A *list* target kiiratjuk a Makefile tartalmát és ezzel látni fogjuk, hogy milyen target-ek vannak vagy mit csinál egy adott target.
-  Ha csak simán a terminálban a make parancsot adjuk meg, akkor a *list* target fog lefutni.
-  Az *all* target lefordírja a Start.java fájlt és a java paranccsal elindítja a programot futásidejű paraméterként a gyökérkönyvtár elérési útját adja át.
+  <br />
+  A *list* target kiiratjuk a Makefile tartalmát és ezzel látni fogjuk, hogy milyen target-ek vannak vagy mit csinál egy adott target.  <br />
+  Ha csak simán a terminálban a make parancsot adjuk meg, akkor a *list* target fog lefutni.  <br />
+  Az *all* target lefordírja a Start.java fájlt és a java paranccsal elindítja a programot futásidejű paraméterként a gyökérkönyvtár elérési útját adja át.  <br />
+  <br />
  
   **Makefile futtatási lehetőségei:**
   ```
@@ -46,8 +48,9 @@
   make list
   make all
   ```
+ <br />
 
-  **A gyökérkönyvtár index.html böngészőben megnyitását és a html oldalak törlését segítő Makefile és működése:**
+  **A gyökérkönyvtár index.html böngészőben megnyitását és a html oldalak törlését segítő Makefile és működése:**  <br />
   ```
   list:
       cat Makefile
@@ -58,11 +61,13 @@
   clean:
       find . -type f -name '*.html' -exec rm {} \;
   ```
-  A *list* target kiiratjuk a Makefile tartalmát és ezzel látni fogjuk, hogy milyen target-ek vannak vagy mit csinál egy adott target.
-  Ha csak simán a terminálban a make parancsot adjuk meg, akkor a *list* target fog lefutni.
-  Az *open* target megnyitja az index.html oldalt egy Firefox böngészőjében.
-  A *clean* target törölni fogja a gyökérkönyvtárból kiindulva az összes html oldalt a könyvtárrendszerben.
-  Ezt a parancsot megfontoltan használjuk nehogy az egész home könyvtárunkban lévő fájlt és könyvtárat letöröljünk!
+  <br />
+  A *list* target kiiratjuk a Makefile tartalmát és ezzel látni fogjuk, hogy milyen target-ek vannak vagy mit csinál egy adott target.  <br />
+  Ha csak simán a terminálban a make parancsot adjuk meg, akkor a *list* target fog lefutni.  <br />
+  Az *open* target megnyitja az index.html oldalt egy Firefox böngészőjében.  <br />
+  A *clean* target törölni fogja a gyökérkönyvtárból kiindulva az összes html oldalt a könyvtárrendszerben.  <br />
+  Ezt a parancsot megfontoltan használjuk nehogy az egész home könyvtárunkban lévő fájlt és könyvtárat letöröljünk!  <br />
+   <br />
 
   **Makefile futtatási lehetőségei:**
   ```
