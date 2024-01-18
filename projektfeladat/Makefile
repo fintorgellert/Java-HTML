@@ -3,4 +3,4 @@ list:
 
 all:
 	javac Start.java
-	java Start /home/fintorgellert/images
+	java Start <root_directory_path>
