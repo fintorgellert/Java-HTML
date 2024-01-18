@@ -17,7 +17,7 @@
   - egy könyvtárra kattintva vigyen az index.html oldalára,
   - egy képre kattintva vigyen a kép html oldalára,
 - a képekhez tartozó html oldal kinézete és működése: <br />
-  ![sample html for images](sapmleimage.png)
+  ![sample html for images](sampleimage.png)
   - a "^^" vigyen vissza a kép könyvtárának index.html oldalára,
   - a "<<" vigyen az előző, míg a ">>" a következő kép html oldalára,
   - a képre kattintva vigyen a következő kép html oldalára,
