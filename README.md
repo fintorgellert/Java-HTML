@@ -62,8 +62,8 @@
       find . -type f -name '*.html' -exec rm {} \;
   ```
   <br />
-  A <em>list<em> target kiiratjuk a Makefile tartalmát és ezzel látni fogjuk, hogy milyen target-ek vannak vagy mit csinál egy adott target.  <br />
-  Ha csak simán a terminálban a make parancsot adjuk meg, akkor a <em>list<em> target fog lefutni.  <br />
+  A <em>list</em> target kiiratjuk a Makefile tartalmát és ezzel látni fogjuk, hogy milyen target-ek vannak vagy mit csinál egy adott target.  <br />
+  Ha csak simán a terminálban a make parancsot adjuk meg, akkor a <em>list</em> target fog lefutni.  <br />
   Az <em>open</em> target megnyitja az index.html oldalt egy Firefox böngészőjében.  <br />
   A <em>clean</em> target törölni fogja a gyökérkönyvtárból kiindulva az összes html oldalt a könyvtárrendszerben.  <br />
   Ezt a parancsot megfontoltan használjuk nehogy az egész home könyvtárunkban lévő fájlt és könyvtárat letöröljünk!  <br />
